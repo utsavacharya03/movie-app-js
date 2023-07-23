@@ -14,65 +14,104 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <form id="form">
-        <input type="text" placeholder="search" id="search" class="search" />
-      </form>
-    </header>
-    <main id="main">
-      <div class="movie">
-        <img
-        src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-        alt="image"
-      />
-  
-      <div class="movie-info">
-        <h3>Movie Title</h3>
-        <span class="green">9.8</span>
+    <div class="container">
+      <div class="search">
+        <input type="text" placeholder="Search Movie..." />
+        <button>Search</button>
       </div>
-      <div class="overview">
-        <h3>Overview</h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        eveniet eos dolorum impedit tempora. Iusto vero commodi culpa natus
-        officiis!
-      </div>
-    </div>
-    <div class="movie">
-      <img
-        src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-        alt="image"
-      />
-  
-      <div class="movie-info">
-        <h3>Movie Title</h3>
-        <span class="green">9.8</span>
-      </div>
-      <div class="overview">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        eveniet eos dolorum impedit tempora. Iusto vero commodi culpa natus
-        officiis!
+      <div class="movies-container favourites">
+        <h1>Favourites</h1>
+        <div class="movies-grid">
+          <!-- <div class="card" data-id="123456">
+            <div class="img">
+              <img src="https://unsplash.it/500/1000" alt="" />
+            </div>
+            <div class="info">
+              <h2>Movie Name</h2>
+              <div class="single-info">
+                <span>Rate: </span>
+                <span>10 / 10</span>
+              </div>
+              <div class="single-info">
+                <span>Release Date: </span>
+                <span>10-04-2022</span>
+              </div>
+            </div>
+          </div> -->
+        </div>
       </div>
     </div>
-    <div class="movie">
-      <img
-        src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-        alt="image"
-        />
-        
-        <div class="movie-info">
-          <h3>Movie Title</h3>
-          <span class="green">9.8</span>
+
+    <div class="popup-container">
+      <span class="x">&#10006;</span>
+      <div class="content">
+        <div class="left">
+          <div class="poster-img">
+            <img src="https://unsplash.it/500/1000" alt="" />
+          </div>
+          <div class="single-info">
+            <span>Add to favourites: </span>
+            <span class="heart-icon">&#9829;</span>
+          </div>
+        </div>
+        <div class="right">
+          <h1>Movie Title</h1>
+          <h3>Movie Tagline</h3>
+          <div class="single-info-container">
+            <div class="single-info">
+              <span>Language: </span>
+              <span>English</span>
+            </div>
+            <div class="single-info">
+              <span>Length: </span>
+              <span>120 minutes</span>
+            </div>
+            <div class="single-info">
+              <span>Rate: </span>
+              <span>10 / 10</span>
+            </div>
+            <div class="single-info">
+              <span>Budget: </span>
+              <span>1350000$</span>
+            </div>
+            <div class="single-info">
+              <span>Release: </span>
+              <span>12-12-2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="genres">
+          <h2>Genres</h2>
+          <ul>
+            <li>Action</li>
+            <li>Drama</li>
+            <li>Romance</li>
+          </ul>
         </div>
         <div class="overview">
-          <h3>Overview</h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          eveniet eos dolorum impedit tempora. Iusto vero commodi culpa natus
-          officiis!
+          <h2>Overview</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            minima maiores unde possimus molestiae culpa id excepturi. Natus,
+            debitis reiciendis.
+          </p>
+        </div>
+        <div class="trailer">
+          <h2>Trailer</h2>
+          <iframe
+            title="YouTube video About the Graduate Schol of Humanities and Social Sciences"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/8ikGGiMaCSI"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
-    </main>
-      
-      <!--  movie app js -->
-      <script src="script.js"></script>
+    </div>
+
+    <!--  movie app js -->
+    <script src="script.js"></script>
   </body>
 </html>

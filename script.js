@@ -60,6 +60,7 @@ async function add_searched_movies_to_dom() {
     add_click_effect_to_card(cards)
 }
 
+// now lets create the popup in the HTML..
 function show_popup(card) {
     console.log('popup' + card)
 }
